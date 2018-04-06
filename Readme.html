@@ -142,14 +142,20 @@ From the data set in step 4, creates a second, independent tidy data set with th
 </div>
 <div id="procedure-for-creating-clean-and-tidy-data" class="section level1">
 <h1>Procedure for creating clean and tidy data</h1>
-<p>The script run_analysis.R contains the R codes to create the data.</p>
+<p>The script run_analysis.R contains the R codes to create the data. The script does the following:</p>
 <ul>
-<li><p>Open the script run_analysis.R</p></li>
-<li><p>Set the working directory of R studio to the directory where the run_analysis.R script is saved</p></li>
-<li><p>Run the script run_analysis.R</p></li>
-<li><p>Write and output the tidy data to file as tidyData.txt</p></li>
+<li>Downloads the file and unzip the folder</li>
+<li>Loads the features dataset</li>
+<li>Loads the activities dataset</li>
+<li>Extracts the mean and standard deviation for each measurement</li>
+<li>Loads test datasets</li>
+<li>Loads training datasets</li>
+<li>Merge test and train datasets</li>
+<li>Use Descriptive names for activities</li>
+<li>Change activity and subject to factors</li>
+<li>Employs the melt and dcast functions of the reshape2 package</li>
+<li>Writes the tidy data and outputs it in the tidyData.txt file</li>
 </ul>
-<p>render(“input.md”)</p>
 </div>
 
 

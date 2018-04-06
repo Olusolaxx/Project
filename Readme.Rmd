@@ -28,14 +28,17 @@ You should create one R script called run_analysis.R that does the following.
 
 # Procedure for creating clean and tidy data #
 
-The script run_analysis.R contains the R codes to create the data. 
+The script run_analysis.R contains the R codes to create the data. The script does the following:
 
-* Open the script run_analysis.R
-
-* Set the working directory of R studio to the directory where the run_analysis.R script is saved
-
-* Run the script run_analysis.R
-
-* Write and output the tidy data to file as tidyData.txt
-
-render("input.md")
+ * Downloads the file and unzip the folder
+ * Loads the features dataset
+ * Loads the activities dataset
+ * Extracts the mean and standard deviation for each measurement
+ * Loads test datasets
+ * Loads training datasets
+ * Merge test and train datasets
+ * Use Descriptive names for activities
+ * Change activity and subject to factors
+ * Employs the melt and dcast functions of the reshape2 package
+ * Writes the tidy data and outputs it in the tidyData.txt file
+ 
